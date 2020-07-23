@@ -1,6 +1,12 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from './pages/Home';
+import Recipes from './pages/Recipes';
+import SingleRecipe from './pages/SingleRecipe';
+import Default from './pages/Default';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar';
 
 function App() {
   // const APP_ID = '4b6d17d8';
@@ -9,10 +15,19 @@ function App() {
   //   `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}`
   // );
   // const data = await response.json();
+
   return (
-    <div className='App'>
-      <h1>Hellp</h1>
-    </div>
+    <Router>
+      <main>
+        <Navbar />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route path='/recipes' component={Recipes} />
+          <Route path='/recipes/:id' component={SingleRecipe} />
+          <Route component={Default} />
+        </Switch>
+      </main>
+    </Router>
   );
 }
 

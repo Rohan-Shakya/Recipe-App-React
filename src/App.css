@@ -10,3 +10,7 @@ body {
 .letter-spacing {
   letter-spacing: 0.5rem;
 }
+.nav-active {
+  font-weight: bold !important;
+  color: #6b6b6b !important;
+}
