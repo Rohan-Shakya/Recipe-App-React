@@ -15,7 +15,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route path='/recipes' component={Recipes} />
+          <Route exact path='/recipes' component={Recipes} />
           <Route path='/recipes/:id' component={SingleRecipe} />
           <Route component={Default} />
         </Switch>
