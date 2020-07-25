@@ -3,35 +3,34 @@ import { Link } from 'react-router-dom';
 
 const SingleRecipe = (props) => {
   const { match } = props;
-  const [recipe, setRecipe] = useState([]);
+
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(true);
   const [image, setImage] = useState();
   const [ingredients, setIngredients] = useState([]);
 
   useEffect(() => {
+    const getData = async () => {
+      const url = `https://api.edamam.com/search?q=${match.params.name}&app_id=${process.env.REACT_APP_API_ID}&app_key=${process.env.REACT_APP_API_KEY}`;
+      try {
+        const response = await fetch(url);
+        const responseData = await response.json();
+        const result = responseData.hits.find((item) => {
+          return Number(match.params.id) === Number(item.recipe.calories);
+        });
+
+        // setRecipe(result);
+
+        setLoading(false);
+        setImage(result.recipe.image);
+        setIngredients(result.recipe.ingredients);
+        setUrl(result.recipe.url);
+      } catch (err) {
+        console.log(err);
+      }
+    };
     getData();
-  }, [match.params.name]);
-
-  const getData = async () => {
-    const url = `https://api.edamam.com/search?q=${match.params.name}&app_id=4b6d17d8&app_key=d6d64d5899a23dfcaeea500b1b4ae695`;
-    try {
-      const response = await fetch(url);
-      const responseData = await response.json();
-      const result = responseData.hits.find((item) => {
-        return match.params.id == item.recipe.calories;
-      });
-
-      setRecipe(result);
-
-      setLoading(false);
-      setImage(result.recipe.image);
-      setIngredients(result.recipe.ingredients);
-      setUrl(result.recipe.url);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  }, [match.params.name, match.params.id]);
 
   if (loading) {
     return (
