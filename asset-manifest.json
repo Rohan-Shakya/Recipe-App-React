@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Recipe-App-React/static/css/main.5079f388.chunk.css",
+    "main.js": "/Recipe-App-React/static/js/main.4423bb80.chunk.js",
+    "main.js.map": "/Recipe-App-React/static/js/main.4423bb80.chunk.js.map",
+    "runtime-main.js": "/Recipe-App-React/static/js/runtime-main.572af77a.js",
+    "runtime-main.js.map": "/Recipe-App-React/static/js/runtime-main.572af77a.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/Recipe-App-React/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7de5b809.chunk.js": "/Recipe-App-React/static/js/2.7de5b809.chunk.js",
+    "static/js/2.7de5b809.chunk.js.map": "/Recipe-App-React/static/js/2.7de5b809.chunk.js.map",
+    "index.html": "/Recipe-App-React/index.html",
+    "precache-manifest.6582382a7c780426e9cd973341c8b37a.js": "/Recipe-App-React/precache-manifest.6582382a7c780426e9cd973341c8b37a.js",
+    "service-worker.js": "/Recipe-App-React/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/Recipe-App-React/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.5079f388.chunk.css.map": "/Recipe-App-React/static/css/main.5079f388.chunk.css.map",
+    "static/js/2.7de5b809.chunk.js.LICENSE.txt": "/Recipe-App-React/static/js/2.7de5b809.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Recipe-App-React/static/media/plates-with-bagel-with-asparagus-and-boiled-egg-and-toasts-4013765.c9459194.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.572af77a.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.7de5b809.chunk.js",
+    "static/css/main.5079f388.chunk.css",
+    "static/js/main.4423bb80.chunk.js"
+  ]
+}
