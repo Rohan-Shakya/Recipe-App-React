@@ -6,7 +6,7 @@ const Header = ({ children, title, styleClass }) => {
       <div className='container-fluid'>
         <div className={`row align-items-center ${styleClass}`}>
           <div className='col text-center'>
-            <h1 className='text-light text-uppercase display-3 letter-spacing text-slanted'>
+            <h1 className=' text-light text-uppercase display-4 letter-spacing'>
               {title}
             </h1>
             {children}
@@ -18,7 +18,7 @@ const Header = ({ children, title, styleClass }) => {
 };
 
 Header.defaultProps = {
-  title: 'Defalu',
+  title: 'Default',
   styleClass: 'header-hero',
 };
 

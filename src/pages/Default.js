@@ -7,12 +7,9 @@ export default class Default extends Component {
     return (
       <Header title='404' styleClass='default-hero'>
         <h2 className='text-uppercase text-light'>
-          You are in the wrong place
+          😟😟 You are in the wrong place 😔😔
         </h2>
-        <NavLink
-          to='/'
-          className='text-uppercase btn btn-secondary btn-lg mt-3'
-        >
+        <NavLink to='/' className='text-uppercase btn btn-danger btn-lg mt-3'>
           Return Home
         </NavLink>
       </Header>

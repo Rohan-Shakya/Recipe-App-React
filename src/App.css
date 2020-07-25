@@ -17,12 +17,11 @@ body {
 .header-hero,
 .default-hero {
   min-height: calc(100vh - 82px);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('https://source.unsplash.com/1600x900/?chicken,foods') center/cover
-      no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url('./image/plates-with-bagel-with-asparagus-and-boiled-egg-and-toasts-4013765.jpg')
+      center/cover no-repeat;
 }
 .default-hero {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url('https://source.unsplash.com/1600x900/?chicken,foods') center/cover
-      no-repeat;
+    url('./image/close-up-of-salad-on-table-326281.jpg') center/cover no-repeat;
 }

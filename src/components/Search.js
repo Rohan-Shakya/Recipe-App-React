@@ -8,7 +8,7 @@ const Search = ({ search, handleChange, handleSubmit }) => {
         <div className='col-10 mx-auto col-md-8 mt-5 text-center'>
           <h1 className='text-slanted text-capitalize'>
             Search Recipes with
-            <strong className='text-orange'>Food2Fork</strong>
+            <strong className='text-danger'> myRecipe</strong>
           </h1>
           <form className='mt-4' onSubmit={handleSubmit}>
             <label htmlFor='search' className='text-capitalize'>

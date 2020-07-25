@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className='navbar navbar-expand-sm navbar-light bg-light'>
+    <nav className='navbar navbar-expand-sm navbar-light bg-light px-5'>
       <NavLink to='/' className='navbar-brand'>
-        <h1 className='font-italic text-slanted'>
-          Food<span className='text-danger'>2Fork</span>
+        <h1 className='font-italic text-slanted font-weight-bold'>
+          my<span className='text-danger'>Recipe</span>
         </h1>
       </NavLink>
       <div className='collapse navbar-collapse show ml-sm-5'>
