@@ -81,7 +81,7 @@ const SingleRecipe = (props) => {
             Recipe Url
           </a>
           <ul className='list-group mt-4'>
-            <h2 className='mt-3 mb-4'>Ingrdients</h2>
+            <h2 className='mt-3 mb-4'>Ingredients</h2>
             {ingredients.map((item, index) => {
               return (
                 <li key={index} className='list-group'>
